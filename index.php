@@ -31,6 +31,7 @@ if (eregi('^[a-zA-Z]+$', $cate)){
 $cate_ids = implode(",", array_keys($rss_cate));
 
 $days = is_numeric($_GET["days"]) ? $_GET["days"]:"";
+//$days = sql_injection($days);
 if (!empty($days)){
     $xtime = time() - $days * 60 * 60 * 24;
     $xtime = strtotime(date("Y-m-d", $xtime));
@@ -65,6 +66,7 @@ if (!empty($site)){
 
 RunTime_Begin();
 $start = $_GET["start"];
+$start = sql_injection($start);
 $start = empty($start)?0:$start;
 $sql="select count(*)  from {$tablepre}xna_news n left join {$tablepre}xna_site x on (x.sid=n.site_id) where 1 $arg";
 $num = $PlusDB->getone($sql);
