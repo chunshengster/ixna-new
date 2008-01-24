@@ -1,5 +1,5 @@
 <?php
-//Nemo Cache @ 2008-01-24 17:18:01
+//Nemo Cache @ 2008-01-24 19:10:18
 include_once template("header.html",'./template/digg/','','','');
 echo '
 <div id="contents">

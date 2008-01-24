@@ -1,5 +1,5 @@
 <?php
-//Nemo Cache @ 2008-01-24 16:56:29
+//Nemo Cache @ 2008-01-24 19:22:38
 echo '
 <div class="copyright">
 <img src="./images/digg/logo.gif" width="40" height="40" alt="" />

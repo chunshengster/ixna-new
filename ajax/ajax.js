@@ -103,10 +103,14 @@ function AJAXRequest() {
 	}
 	this.post=function() {
 		var purl,pcbf,pc,ac=arguments.length,av=arguments;
+		//alert(purl);
+		//alert(pcbf);
+		//alert(pc);
+		//alert(av[0]);
 		purl=ac>0?av[0]:this.url;
 		pc=ac>1?av[1]:"";
 		pcbf=ac>2?$CB(av[2]):this.oncomplete;
-		if(!purl&&!pcbf) return false;
+		if(!purl||!pcbf) return false;
 		send(purl,pc,pcbf,"POST",true);
 	}
 	this.postf=function() {

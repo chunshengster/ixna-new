@@ -131,11 +131,13 @@ function showtags(a_sID){
 //submitTag
 function submitTag(a_sID){
     //update TAG
-    alert(txtTag);
+	//alert("ID:"+a_sID);
+	txtTag=document.getElementById("txtTag"+a_sID).value;
+    //alert(txtTag);
 	ajax.post(
-		"./ajax/addtags.php?id=" + a_sID,
-		document.getElementById("txtTag").value,
-		function(obj) { document.getElementById("tag_message_"+id).value=obj.responseText;  }
+		"./ajax/addtags.php?id="+a_sID,
+		"txtTag="+txtTag,
+		function(obj) { document.getElementById("tag_message_"+a_sID).innerHTML+=" "+obj.responseText;  }
 	);
 }
 

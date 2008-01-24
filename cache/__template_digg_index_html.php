@@ -1,5 +1,5 @@
 <?php
-//Nemo Cache @ 2008-01-24 16:56:28
+//Nemo Cache @ 2008-01-24 19:41:56
 include_once template("header.html",'./template/digg/','','','');
 echo '
 <div id="contents">
@@ -108,7 +108,7 @@ echo '<img src="./cache/ico/'.$list['site_id'].'_favicon.ico" style="height:16px
 echo '</a>
 <a href="'.$list['news_url'].'" onclick="javascript:link('.$list['id'].');" class="simple" rel="external"><span class="d">[ '.$list['site_name'].' ]</span></a> Time:'.$list['ctime'].' Hits:'.$list['news_hits'].'</p>
 <p>'.$list['content'].'</p>
-	<div id="tag_message_'.$list['id'].'">Tags: <a style="cursor:pointer" onclick="javascript:showtags(\'Tags_'.$list['id'].'\');" id="addTags_'.$list['id'].'">[+]</a> add</div>
+	Tags:<a style="cursor:pointer" onclick="javascript:showtags(\'Tags_'.$list['id'].'\');" id="addTags_'.$list['id'].'">[+]</a> add <div id="tag_message_'.$list['id'].'"></div>
 	<div id="Tags_'.$list['id'].'" style="display:none;">
 	<form id="frmEditTag'.$list['id'].'" action=""><p>
         <input type="text" id="txtTag'.$list['id'].'" />
