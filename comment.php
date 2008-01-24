@@ -47,8 +47,7 @@ if ($comments == 'true'){
         }
         /*
         广告过滤关键字
-
-
+		
         $search = array("六合彩","|免费[\s]*电影|","安利");
         $text = preg_replace($search,"11111",$text);
         return trim($text);

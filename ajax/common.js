@@ -72,6 +72,7 @@ function NewsVote(id) {
 
 // comment news_vote
 function ReplyVote(id, c) {
+	//alert (id);
 	ajax.get(
 		"./comment.php?" + c + "=" + id,
 		function(obj) {
