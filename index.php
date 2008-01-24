@@ -7,11 +7,14 @@ include _ROOT . "/inc/functions.php";
 
 $is_run = $_COOKIE["is_run"];
 if($is_run!='yes'){
-	$is_run='no';
+	//这句话没用？
+	//$is_run='no';
 	setcookie("is_run","yes");
 }
 
 $cate = is_string($_GET[cate]) ? $_GET[cate]:"";
+// 增加sql注入过滤函数
+$cate = sql_injection($cate);
 if (!empty($cate)){
 	$sql = "select cid,cate_title from {$tablepre}xna_category where cate_title='" . $cate . "'";
 	$rt = $PlusDB->execute($sql);
@@ -37,6 +40,7 @@ if (!empty($days)){
 }
 
 $hot = $_GET["hot"];
+$hot = sql_injection($hot);
 if (!empty($hot)){
     $hots .= " n.news_vote desc,";
 }else{
