@@ -26,5 +26,5 @@ RewriteRule ^articles_([0-9]+)\.html$		articles.php\?id=$1 [NC,QSA,L]
 RewriteRule ^([0-9]+)\.html$		index.php\?pageID=$1 [NC,QSA,L]
 RewriteRule ^(.*)_([0-9]+)\.html$		index.php\?cate=$1&pageID=$2 [NC,QSA,L]
 
-
+</IfModule> 
 # END iXNA

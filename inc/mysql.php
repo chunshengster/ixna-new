@@ -1,5 +1,5 @@
 <?php
-class DB{
+class DBA{
    var $conID;
    var $database;
    var $lastErrorMsg;
@@ -10,7 +10,7 @@ class DB{
    var $magic_quotes_gpc;
    var $charset = 'UTF-8'; 
   
-   function DB($AutoConnect = true){
+   function DBA($AutoConnect = true){
     if($AutoConnect){
      if($this->Connect(DB_HOST,DB_PORT,DB_USERNAME,DB_PASSWORD)) $this->SelectDB(DB_DATABASE);
     }
@@ -18,6 +18,7 @@ class DB{
   } 
 
   function Connect($host,$port,$username,$password){
+  		//echo "$host,$port,$username,$password";
        $this->conID = mysql_connect($host.':'.$port,$username,$password) or $this->_Error();
        return $this->conID;
   } 
@@ -85,7 +86,7 @@ class DB{
  function Execute($sql){
    $sql = trim($sql);
     if((strncasecmp("SELECT",$sql,6) == 0) || (strncasecmp("SHOW",$sql,4) == 0)){
-        $result = new DB_Result($this,$sql);
+        $result = new DBA_Result($this,$sql);
       return $result;
     }else{
            return $this->_Query($sql);
@@ -142,12 +143,12 @@ class DB{
 	  return mysql_fetch_array($rs,$this->fetchMode);
   }
 
-function GetOne($sql){
-$rs = $this->_Query(sprintf("%s LIMIT 0,1",$sql));
-if(mysql_num_rows($rs)>0) {
-return mysql_result($rs,0);
-}
-}
+  function GetOne($sql){
+	$rs = $this->_Query(sprintf("%s LIMIT 0,1",$sql));
+		if(mysql_num_rows($rs)>0) {
+			return mysql_result($rs,0);
+		}
+  }
  
   function GetArray($sql){
       $rs = $this->Execute($sql);
@@ -313,7 +314,7 @@ return mysql_result($rs,0);
   } 
 }
 
-Class DB_Result{
+Class DBA_Result{
  var $sql;
  var $result;
  var $conID;
@@ -326,7 +327,7 @@ Class DB_Result{
  var $fieldTable;
  var $EOF = true;
    
- function DB_Result(&$object,$sql){
+ function DBA_Result(&$object,$sql){
    $this->sql = $sql;
      
    $this->result =& $object->_query($this->sql);

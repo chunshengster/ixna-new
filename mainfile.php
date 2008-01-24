@@ -1,13 +1,14 @@
 <?php
 set_time_limit(0);
 error_reporting(E_ALL ^ E_NOTICE);
-include "db.php";
+include _ROOT ."/db.php";
 include _ROOT . "/inc/mysql.php";
 include _ROOT . "/inc/config.php";
 /*
 database
 */
-$PlusDB = new DB(false);
+$PlusDB = new DBA(false);
+#echo "$db_host, $db_port, $db_username, $db_password";
 if ($pconnect == "1"){
     $PlusDB->pconnect($db_host, $db_port, $db_username, $db_password);
 }else{

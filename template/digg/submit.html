@@ -26,7 +26,7 @@
 <script src="./ajax/tformvalid.js" type="text/javascript"></script>
 <script language="javascript" type="text/javascript">
 window.onload=function() {
-    var oValid = new TFormValid("add");
+    var oValid = new TFormValid("addsite");
     oValid.addRule("title", "NotNull", "请输入站点名称");
     oValid.addRule("site_url", "URL", "非法的站点地址");
     oValid.addRule("rss_url", "URL", "非法的RSS地址");
@@ -38,7 +38,7 @@ window.onload=function() {
 </script>
 <div id="info"></div>
 <table style="height: 100%">
-<form id="add" name="add" action="./submit.php" method="post">
+<form id="addsite" name="addsite" action="./submit.php" method="post">
 <tr><td>站点名称</td><td><input id="title" name="title" size="70" maxlength="100"  type="text" /></td></tr>
 <tr><td>站点地址</td><td><input id="site_url" name="site_url" size="70" maxlength="100"  type="text" /></td></tr>
 <tr><td>RSS地址</td><td><input id="rss_url" name="rss_url" size="70" maxlength="100"  type="text" /></td></tr>
@@ -50,7 +50,8 @@ window.onload=function() {
 <tr><td>验证码</td><td><input name="authnum" class="txtinput" id="authnum" style="width: 80px;" maxlength="16" /><img src='./inc/authnum.php' onClick="this.src='./inc/authnum.php?r='+Math.random()" /></td></tr>
 <tr><td colspan="2" align="center">
 <input type="hidden" name="refer" value="refer">
-<input type="button" onclick="e_postf();" value="提交" />&nbsp;&nbsp;
+<!--<input type="submit" name="submit" value="提交">--->
+<input type="button" onclick="e_postf();" value="提交" />&nbsp;&nbsp; 
 <input name="reset" type="reset" value="重置" />
 </td>
 </form>

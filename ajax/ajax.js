@@ -111,16 +111,27 @@ function AJAXRequest() {
 	}
 	this.postf=function() {
 		var fo,vaf,pcbf,purl,pc,pm,ac=arguments.length,av=arguments;
+		//alert ("hello ajax.js!");
+		//alert ("ac:");
 		fo=ac>0?$VO(av[0]):false;
 		if(!fo||(fo&&fo.nodeName!="FORM")) return false;
+		//alert ("hello ajax.js1!");
 		vaf=fo.getAttribute("onsubmit");
 		vaf=vaf?(typeof(vaf)=="string"?new Function(vaf):vaf):null;
-		if(vaf&&!vaf()) return false;
+		//alert ("hello ajax.js2!");
+		//if(vaf&&!vaf()) alert ('vaf');//return false;
+		//alert ("hello ajax.js!3");
 		pcbf=ac>1?$CB(av[1]):this.oncomplete;
+		//alert ("hello ajax.js4!");
 		purl=ac>2?av[2]:(fo.action?fo.action:this.url);
+		//alert ("hello ajax.js5!");
 		pm=ac>3?av[3]:(fo.method?fo.method.toUpperCase():"POST");
+		//alert ("hello ajax.js6!");
 		if(!pcbf&&!purl) return false;
+		//alert ("hello ajax.js7!");
 		pc=this.formToStr(fo);
+		//alert (pc);
+		//alert ("hello ajax.js8!");
 		if(!pc) return false;
 		if(pm) {
 			if(pm=="POST") send(purl,pc,pcbf,"POST",true);

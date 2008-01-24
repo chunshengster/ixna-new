@@ -20,8 +20,14 @@ function show_xna_content(id) {
 // post
 function e_postf() {
 	ajax.postf(
-		"add",
-		function(obj) { document.getElementById("info").innerHTML=obj.responseText;}
+		"addsite",
+		function(obj) {
+			document.getElementById("info").innerHTML=obj.responseText;		
+		//	ajax.get(
+		//		"./ajax/getcomments.php?id=" + id,
+		//		function(obj) { document.getElementById("normal").innerHTML+=obj.responseText; }
+		//	);
+		}
 	);
 }
 
@@ -37,7 +43,7 @@ function process(url) {
 }
 
 function e_comm(id) {
-id = document.getElementById("id").value
+	id = document.getElementById("id").value
 	ajax.postf(
 		"addcomm",
 		function(obj) {
