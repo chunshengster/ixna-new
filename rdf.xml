@@ -1,0 +1,11 @@
+<?xml version="1.0"?> 
+<rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
+  <service>
+    <engineName>Spvrk XML News Aggregator</engineName> 
+    <engineLink>http://www.spvrk.com/</engineLink>
+    <homePageLink>hhttp://www.ixna.net/</homePageLink>
+    <apis>      
+      <api name="ixna" preferred="false" apiLink="http://www.ixna.net/" blogID="1" />
+    </apis>
+  </service>
+</rsd>

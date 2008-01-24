@@ -1,0 +1,37 @@
+<!--include:header.html-->
+<strong>用户列表</strong>  |  <a href="?action=doAddUser">添加用户</a>
+<hr  />
+<script language="javascript" type="text/javascript" src="../images/admin/common.js"></script>
+<form action="" method="post" name="frmAdd">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>编号</td>
+<td>用户名</td>
+<td>性别</td>
+<td>email</td>
+<td>登陆IP</td>
+<td>权限</td>
+<td>操作</td>
+</tr>
+<!--for:$ret $key $user-->
+<tr>
+<td><input type="checkbox" name="chkLink" value="$user[uid]" />$user[uid]</td>
+<td>$user[username]</td>
+<td>$user[sex]</td>
+<td>$user[email]</td>
+<td>$user[lastip]</td>
+<td>$user[realname]</td>
+<td><a href="###"><img src="../images/admin/feed_lock.png" onClick="setstate($user[uid])" alt="点我" class="img" /></a>
+<a href="?action=doEditUser&amp;id=$user[uid]"><img src="../images/admin/feed_add.png" class="img" alt="编辑"/></a>  <a href="?action=doDelUser&amp;id=$user[uid]" onclick="return confirm('确认删除此内容?');"><img src="../images/admin/feed_delete.png" class="img" alt="删除" /></a></td>
+</tr>
+<!--/for-->
+</table>
+</form>
+      <div class="divFoot">
+           <input type="checkbox" name="chkUnSelect" onClick="javascript:selectAll('frmAdd');" id="chkSelectAll"><label for="chkSelectAll">全选</label>
+		   <input type="submit" name="btnAction" value=" 添加 " />
+           <input type="submit" name="btnAction" value=" 删除 " />
+       </div>
+$total $pagenav
+<hr />
+<!--include:footer.html-->

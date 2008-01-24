@@ -1,0 +1,20 @@
+<!--include:header.html-->
+<div id="m_Body">
+<div id="wrapper">
+<div class="news-full">
+<div class="news-body">
+<!--for:$ret $key $site-->
+<h2>$site[rss_cate]</h2>
+<ul>
+<li><a href="$site_links$site[sid]" ><img src="./cache/ico/$site[sid]_favicon.ico" style="height:16px" class="img" alt="articles" /></a> <a href="$site[site_url]" rel="external">$site[site_title]</a></li>
+<li>$site[ctime]</li>
+<li><a class="similar" href="$site[rss_url]" rel="external"><img src="./images/icon/feed.png" class="img" alt="rss" /></a> [$site[sum]]
+<li>$site[content]</li>
+</ul>
+<!--/for-->
+</div>
+</div>
+</div>
+</div>
+<br style="clear: both;" />
+<!--include:footer.html-->

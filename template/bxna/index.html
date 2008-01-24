@@ -1,0 +1,33 @@
+<!--include:header.html-->
+<a href="./" class="selected">All</a>
+ <!--for:$cates $key $cate-->
+<a href="$cate_links$cate[name]" title="$cate[sum]"  class="navLight">$cate[name] </a> | 
+<!--/for-->
+<a href="$rss_links$type" title="RSS 2.0" rel="external"><img src="./images/default/rss.gif" class="img" alt="rss" /></a> <a href="$atom_links$type" class="img" title="ATOM 1.0" rel="external"><img src="./images/default/atom.gif" class="img" alt="atom" /></a>
+</p>
+<div id="aggregator">
+<h3 class="caption">Aggregated News</h3>
+<p class="feednews_count"></p>
+<!--for:$ret $key $list-->
+<div class="news">
+<h3 class="title"><a target="_blank" href="$list[news_url]">$list[title]</a></h3>
+<dl><dd>
+<small class="pubDate"><i>Publish date: </i>$list[ctime]</small>
+<small class="creator"><i>Posted by </i><a href="$list[site_url]" target="_blank">$list[site_name]</a></small>
+<div class="summary">$list[content]</div>
+<small class="related"><a class="similar" href="http://www.google.com/search?q=related:$list[site_url]" target="_blank">Similar Sites</a>
+<a class="search" href="http://www.google.com/search?q=$list[e_title]" target="_blank">Search in Google</a>
+<a class="similar" href="$list[rss_url]" target="_blank">RSS</a>
+</small>
+</dd></dl>
+</div> 
+<!--/for-->
+</div>
+<p id="pager">
+<strong class="caption">Page:</strong>
+<span>$total
+<!--if:$ispages==ajax-->$pageajax
+<!--elseif:$ispages==html-->$pagehtml
+<!--else-->$pagenav<!--/if--></span>
+</p>
+<!--include:footer.html-->

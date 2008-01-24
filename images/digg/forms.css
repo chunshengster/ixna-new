@@ -1,0 +1,400 @@
+.form-note {
+	font-size: 85%;
+	color: #999;
+	margin-bottom: 0.3em;
+	margin-top: 0;
+	display: block;
+}
+
+.form-divide {
+	padding: 0.3em 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.form-divide span {
+	font-size: 85%;
+}
+
+.form-divide span img {
+	vertical-align: middle;
+}
+
+.form-error, .form-error-basic, .error/*, .warning*/ {
+        color: #900;
+        font-size: 85%;
+        font-weight: bold;
+        margin-bottom: 1em;
+        background: url(/img/error.gif) no-repeat;
+        padding: 2px 0 4px 18px;
+}
+
+.form-full {
+	width: 100%;
+}
+
+#url {
+	font-size: 135%;
+	white-space: nowrap;
+}
+
+#url-string {
+	width: 680px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#bodytextpreview {
+	overflow: hidden;
+	width: 550px;
+}
+
+fieldset #url {
+	width: 500px;
+	display: inline;
+}
+
+.form-large .form-text, .form-large .form-text-variable, .form-large textarea, #topic-default1, #topic-default2, #topic-default3, .form-large select, .form-large .form-brief {
+	font-size: 126%;
+	background: #FFFADB url(/img/form-back.gif) repeat-x;
+	border: 1px solid #CBB945;
+	color: #776B1B;
+	padding: 2px;
+}
+
+.form-large select {
+	padding: 1px 0;
+}
+
+.form-large textarea.disabled {
+	background: #eee;
+	border: 1px solid #ccc;
+	color: #666;
+}
+
+.form-large input {
+	font-size: 126%;
+	padding: 3px 7px !important;
+}
+
+.form-large div {
+	padding-bottom: 1em;
+	clear: left;
+}
+
+.form-large .inline {
+	float: left;
+	clear: none;
+	padding-right: 5px;
+}
+
+input.button1, input.button2 {
+	font-size: 135%;
+	margin-top: 2px;
+	padding: 3px 10px;
+}
+
+.button2 {
+	color: #777;
+}
+
+.button3 {
+	border: 1px solid #EEE8DD;
+	color: #105CB6;
+	margin: 0 5px;
+	line-height: 2;
+	background: #fff;
+	cursor: pointer;
+	background: url(/img/menu-back.gif) 0 100% repeat-x;
+}
+
+.button3:hover {
+	border-color: #003;
+}
+
+.form-large .form-text {
+	width: 260px;
+	padding: 3px;
+}
+
+.form-large .form-brief {
+	width: 200px;
+} /*IE6*/
+
+.form-large .form-text-variable {
+	width: 96%;
+}
+
+.form-large textarea  {
+	height: 7em;
+	width: 97%;
+}
+
+.form-large label {
+	float: none;
+	display: block;
+	font-size: 105%;
+	font-weight: bold;
+	letter-spacing: -0.03em;
+	color: #817A71;
+	margin: 0.7em 0 0.1em 0;
+}
+
+.form-large label span {
+	font-size: 80%;
+	font-weight: normal;
+	color: #999;
+	letter-spacing: 0;
+}
+
+.form-large label.form-checkbox {
+	display: inline;
+	vertical-align: middle;
+	position: relative;
+	top: -3px;
+}
+
+.form-large .form-field {
+	padding-bottom: 1em;
+}
+
+#topic-default1, #topic-default2, #topic-default3 {
+	width: 1.5em;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.form-url-text {
+	font-size: 126%;
+	font-weight: normal;
+}
+
+.col, .col dt, .col dd {
+	margin: 0;
+	padding: 0;
+    white-space: nowrap;
+}
+
+.col, dl.col {
+	float: left;
+	margin-right: 8px;
+}
+
+.col {
+	padding: 5px 5px 15px 5px;
+	/*min-height: 160px;*/
+} * html dl.col { height: 160px; }
+
+#titlepreviewheading {
+    min-height: 18px;
+} * html #titlepreviewheading { height: 18px; }
+
+#contentpreview {
+    min-height: 18px;
+} * html #contentpreview { height: 18px; }
+
+.col label {
+	font-weight: normal;
+	display: inline;
+}
+
+fieldset .col dt {
+	float: none;
+	width: auto;
+	text-align: left;
+}
+
+dl.col dt {
+	font-weight: bold;
+	font-size: 105%;
+	margin-top: 5px;
+}
+
+dl.col dd {
+	padding-left: 20px;
+	padding-top: 2px;
+	font-size: 80%;
+}
+
+dl.col label {
+	font-weight: bold;
+}
+
+dl.col dd label {
+	font-weight: normal;
+	letter-spacing: 0em;
+}
+
+dl.col input {
+	vertical-align: middle;
+	margin-top: -1px;
+}
+
+#submit-topics dl.col dd, #submit-topics dl.col dt {
+	padding-left: 5px;
+}
+
+.inline-footer {
+	padding-top: 1em;
+}
+
+.inline-footer form {
+	display: inline;
+}
+
+div.captcha label {
+	font-size: 85%;
+	letter-spacing: 0;
+}
+
+img.captcha {
+	margin-top: 2px;
+}
+
+span#audiocaptchalink {
+        display: block;
+        color: #999;
+        font-size: 85%;
+        clear: left;
+        margin-bottom: 0.5em;
+} /*remote.css*/
+
+.form-tools input {
+	float: right;
+	font-size: 105%;
+	font-weight: bold;
+}
+
+.field-news_count {
+	float: right;
+	font: bold 105% sans-serif;
+	margin-top: 4px;
+	padding-right: 20px;
+	color: #3B9300;
+}
+
+.field-news_count-over {
+	color: #c00;
+}
+
+.side-help {
+	float: right;
+	width: 40%;
+	margin-top: 16px;
+}
+
+.side-help li {
+	margin-bottom: 4px;
+}
+
+.registration-form fieldset {
+	width: 50%;
+}
+
+.registration-form .captcha {
+	float: left;
+	margin-right: 4px;
+}
+
+/***** fieldsets *****/
+
+fieldset {
+	border: 1px solid #ddd;
+	margin: 1em 0;
+	padding: 15px;
+	clear: left;
+} * html fieldset { padding-top: 0; }
+
+legend {
+	font-size: 135%;
+	font-weight: normal;
+	letter-spacing: -0.03em;
+	line-height: 1;
+	color: #80A71F;
+	padding: 0 0.5em; /* Top and Bottom for IE7 */
+} * html legend { margin-bottom: 15px; padding: 0 0.5em; }
+
+fieldset fieldset legend {
+	font-size: 105%;
+	font-weight: bold;
+}
+
+legend span {
+	color: #999;
+	font-size: 90%;
+	letter-spacing: 0;
+}
+
+fieldset dl {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset dt {
+	clear: left;
+	float: left;
+	width: 18em; /* increase for wider dt text */
+	text-align: right;
+	padding: 0 1em 0.5em 0;
+}
+
+fieldset dd {
+	padding: 0 0 0.5em 0;
+	font-weight: bold;
+}
+
+fieldset.labels label {
+	width: 15em;
+	float: left;
+	text-align: right;
+	display: block;
+	padding: 0 0.5em 0.2em 0;
+}
+
+fieldset.labels div {
+	padding: 0.2em 0;
+	clear: left
+}
+
+.fieldset-footer {
+	margin: 0;
+	position: relative;
+	left: -15px;
+	padding: 10px 0 15px 15px;
+	background: url(/img/field-back.gif) no-repeat;
+	clear: left;
+	top: 15px;
+}
+
+fieldset fieldset input {
+	font-size: 100% !important;
+}
+
+/* Confirmation Dialogue */
+
+
+
+/* Instruction List */
+
+.instruction-list {
+	margin: 0;
+	padding: 0;
+}
+
+.instruction-list li {
+	list-style: none;
+	background: url(/img/important.png) no-repeat 7px 11px;
+	margin: 0;
+	padding: 10px 0 10px 25px;
+}
+
+.instruction-list .instruction-search {
+	background-image: url(/img/important-search.png);
+}
+
+.instruction-list .instruction-link {
+	background-image: url(/img/important-link.png);
+}
+
+.instruction-list .instruction-write {
+	background-image: url(/img/important-write.png);
+}

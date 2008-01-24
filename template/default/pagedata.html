@@ -1,0 +1,32 @@
+<!--for:$ret $key $list-->
+<div class="ArticleTitle">
+<span class="FloatLeft"><img src="./images/default/colg.gif" id="NodeImg$list[id]" onclick="javascript:onNodeClick($list[id]);" class="img" alt="" />  <a href="$articles_links$list[id]"><!--if:$list[news_state]=="1"--><img src="./images/default/peak.png" style="height:16px" class="img" alt="peak" /><!--else--><img src="./cache/ico/$list[site_id]_favicon.ico" style="height:16px" class="img" alt="articles" /><!--/if--></a> <a href="javascript:onNodeClick($list[id]);" class="navBlackg" title="$list[news_hits] Hits">$list[news_title]</a></span>
+<span class="FloatRight"><a  href="$list[news_url]" onclick="javascript:link($list[id]);" rel="external">$list[site_name]</a> <a href="$site_links$list[site_id]"><img src="./images/default/site.png" class="img" alt="site" /></a>
+</span>
+</div>
+<div id="NodeContent$list[id]" style="display: none;" class="ArticleContent"><input type="hidden" name="NodeContent" />
+<div id="newscontent$list[id]">
+<div class="loader_container">
+<div class="loader"><img src="./images/default/loading.gif" class="img" alt="loading" /></div>
+</div>
+</div>		
+<div class="ArticleInfo"> [$list[ctime]]
+<a class="search" href="http://www.google.com/search?q={%$news.e_title%}" rel="external"><img src="./images/icon/google.gif" alt="Search in Google" /></a>
+<a class="similar" href="$list[rss_url]" rel="external"><img src="./images/icon/feed.png" alt="Rss" /></a>
+</div>
+</div>
+<!--/for-->
+<div id="ContentFoot">
+<div class="rDiv">
+<div class="lDiv martop"> </div>
+<div class="lDiv martop"> <strong>Links:</strong>
+<!--for:$link $key $link-->
+<a href="$link[link_url]" class="navBlack" rel="external">$link[link_title]</a>
+<!--/for-->
+<a href="./wap.php" class="navBlack" rel="external">Wap</a></div>
+<div class="lDiv"><a href="http://www.ixna.net/"><img src="./images/logo.gif" alt="Ixna" class="img" height="15" width="80" /></a></div>
+<div class="cls"></div>
+</div>
+<div class="cls"></div>
+</div>
+</div>

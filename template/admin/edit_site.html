@@ -1,0 +1,37 @@
+<!--include:header.html-->
+<strong>编辑RSS</strong>
+<hr  />
+<table width=100% border=0>
+<script language="JavaScript" type="text/javascript" src="../ajax/tformvalid.js"></script>
+<script language="javascript" type="text/javascript">
+window.onload=function() {
+    var oValid = new TFormValid("addsite");
+    oValid.addRule("title", "NotNull", "请输入站点名称");
+    oValid.addRule("site_url", "URL", "非法的站点地址");
+    oValid.addRule("rss_url", "URL", "非法的RSS地址");
+    oValid.addRule("icon", "URL", "非法的图标地址");
+    oValid.addRule("site_types", "NotNull", "请选择站点分类");
+    oValid.Listen();
+};
+</script>
+<form id="addsite" name="addsite" action="" method="post" onsubmit="return false">
+<input name="module"  value="xna" type="hidden">
+<input name="action"  value="doUpdate" type="hidden">
+<input name="id" value="$site[sid]" type="hidden">
+<tr><td>站点名称</td><td><input id="title" name="title" size="50" maxlength="100"  type="text" value="$site[site_title]"></td></tr>
+<tr><td>站点地址</td><td><input id="site_url" name="site_url" size="50" maxlength="100" type="text" value="$site[site_url]"></td></tr>
+<tr><td>RSS地址</td><td><input id="rss_url" name="rss_url" size="50" maxlength="100" type="text" value="$site[rss_url]"></td></tr>
+<tr><td>ICON地址</td><td><p><label for="c_icon">favicon.icon：</label>
+<img src="$site[site_icon]" alt="Spvrk XML News Aggregator" class="favicon" height="16" width="16">
+<span>(留空为默认favicon.icon)</span><br /><input id="icon" name="icon" size="50" maxlength="100" type="text" value="$site[site_icon]"></p></td></tr>
+<tr><td>email</td><td><input id="email" name="email" size="50" maxlength="100" type="text" value="$site[site_email]"></td></tr>
+<tr><td>站点说明</td><td><textarea id="content" name="content" cols="60" rows="3">$site[site_content]</textarea></td></tr>
+<tr><td>RSS分类</td><td><select id="rss_cate" name="rss_cate"><!--option:$rss_cate $site[rss_cate]--></select></td></tr>
+<tr><td>更新频率</td><td><select id="rss_feq" name="rss_feq"><!--option:$rss_feq $site[rss_feq]--></select>分钟</td></tr>
+
+<tr><td></td><td>
+<input name="submit" type="submit" value=" 提交 " >&nbsp;&nbsp;
+<input name="reset" type="reset" value=" 重置 " >&nbsp;&nbsp;
+</form></table>
+<hr  />
+<!--include:footer.html-->

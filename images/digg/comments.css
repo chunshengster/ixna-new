@@ -1,0 +1,522 @@
+/* tabs */
+.tab {
+    background: url(/img/tab-tl.gif) no-repeat 0 0;
+    border-bottom: 2px solid #A5CC7A;
+    height: 2.1em;
+    clear: left;
+    margin-top: 2em;
+    padding: 0 0 0 5px;
+}
+
+.tab h3 {
+    float: left;
+    letter-spacing: normal;
+    font-size: 105% !important;
+    font-weight: bold !important;
+    height: 1.5em;
+    min-width: 12em;
+    text-align: center;
+    color: #fff;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0.6em 10px 0 5px;
+    margin: 0;
+    background: #A5CC7A url(/img/tab-tr.gif) no-repeat 100% 0;
+}
+
+/* ******** */
+
+.comment {
+    margin-right: 220px;
+    clear: left;
+    color: #333;
+}
+
+#c-options form {
+    margin: 0;
+    padding: 0;
+    clear: none;
+}
+
+#c-options {
+    height: 1em;
+    padding: 0;
+    font-size: 85%;
+    width: 100%;
+} /* ie6 */
+
+#c-options a, #c-options form {
+	float: right;
+}
+
+.c-tool-settings, .c-tool-expand, .c-tool-block {
+    padding: 3px 3px 3px 23px;
+    text-decoration: none;
+    border: 1px solid #DDEAF6;
+}
+
+.c-tool-expand {
+    background: url(/img/c-tool-expand.gif) no-repeat 4px 50%;
+    margin: 0 0 0 5px;
+}
+
+.c-tool-block {
+    margin: 0 5px;
+    background: url(/img/c-tool-block.gif) no-repeat 4px 50%;
+}
+
+.c-tool-settings {
+    background: url(/img/c-tool-settings.gif) no-repeat 4px 50%;
+}
+
+#c-options select {
+    font-size: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.comment li {
+    list-style-type: none;
+    margin: 0 0 10px 0;
+    color: #333;
+    padding: 0;
+} /*ie6, ie7*/
+
+.comment li li {
+    margin: 0 0 10px 10px;
+} /*ie6, ie7*/
+
+.comment ul {
+    margin: 10px 0 1em 0;
+    padding: 1em 0;
+} /*ie7*/
+
+.c-body {
+    margin: 5px 5px 10px 5px;
+    overflow: hidden;
+} * html .c-body { overflow: visible; }
+
+/* different message header styles */
+
+.c-head {
+    clear: left;
+    padding: 5px 5px 5px 22px;
+    font-size: 85%;
+    position: relative;
+    background: #eaf0f5;
+    border-top: 1px solid #c0c7cd;
+} /*ie6 ie7*/
+
+.c-head .c-img-user {
+	border: 1px solid #ccc;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+
+.c-head .c-block {
+	vertical-align: middle;
+	position: relative;
+	bottom: 2px;
+}
+
+.c-head .c-block:hover {
+	cursor: pointer;
+}
+
+.c-user {
+    background-color: #94AEC3;
+    border-color: #628bad;
+}
+
+.c-user a, .c-user {
+    color: #2B4154;
+}
+
+.c-friends {
+    background-color:#f0fce4;
+    border-color: #abcc8a;
+}
+
+.c-friends a, .c-friends {
+    color: #5C793C;
+}
+
+.c-disabled {
+    background-color: #eee;
+    border-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.c-disabled, .c-disabled strong, .c-disabled a {
+    color: #666;
+    font-weight: normal;
+}
+
+.c-active a, .c-active {
+    color: #52718B;
+}
+
+.c-userimg {
+    margin-right: 3px;
+    vertical-align: middle;
+	border: 1px solid #ccc;
+}
+
+.c-diggs {
+    float: right;
+    font-weight: bold;
+    margin-top: -2px;
+}
+
+.c-diggs img {
+    margin: 0 0 0 2px;
+    vertical-align: middle;
+}
+
+.c-friend {
+    font-weight: normal;
+    padding-right: 10px;
+    padding-left: 16px;
+    background: url(/img/c-friend.png) no-repeat;
+}
+
+.c-friend img {
+    padding-right: 4px;
+}
+
+.c-userdata {
+    color: #6C6C0A;
+    font-size: 85%;
+    margin: 5px 0;
+}
+
+.c-reply .c-userdata {
+	font-size: 100%;
+	color: #5080a8;
+	display: none;
+}
+
+.c-reply input {
+	font-size: 100%;
+	margin-top: 3px;
+}
+
+.c-ir .c-box {
+    font-weight: normal;
+    background: #fff;
+    border-left: 1px solid #fff;
+    color: #999;
+    padding: 4px 10px;
+}
+
+a.c-box {
+    display: block;
+    font-size: 85%;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666;
+    background: #fff url(/img/c-comments-add.png) no-repeat 6px 4px;
+    padding: 4px 10px 4px 26px;
+    margin: -0.5em 0 0 20px;
+    border-left: 1px solid #fff;
+}
+
+.c-box span.lnk, .c-span-higlight {
+    text-decoration: underline;
+    color: #105CB6;
+}
+
+a.c-box:hover {
+	background-position: 6px -96px;
+}
+
+.c-box-on, .c-box-on:hover {
+	background-position: 6px -196px !important;
+}
+
+.c-ir .c-box:hover {
+	background: #fff;
+	border-color: #fff;
+	color: #666;
+}
+
+a.c-box:hover, a.c-box-on, .c-ir .c-box-on, .c-ir .c-box-on .c-span-higlight, .c-ir .c-box-on:hover, a.c-box:hover span.lnk, .c-box-on span.lnk, a.c-box-on {
+    background-color: #8db5d7;
+    color: #fff;
+    border-color: #8db5d7;
+}
+
+a.c-fetching, a.c-fetching:hover {
+	background: #8db5d7 url(/img/c-loading.gif) 6px 4px no-repeat !important;
+    border-left: 1px solid #8db5d7;
+}
+
+a.c-fetching, a.c-fetching:hover, a.c-fetching span.lnk {
+	color: #fff !important;
+}
+
+.c-box-t span:hover, .c-box-t a:focus {
+    color: #003;
+}
+
+.c-jerk {
+    background: #f9f9f9;
+    padding: 4px 4px 4px 15px;
+    font-size: 85%;
+    margin: -10px 0 10px 0;
+    color: #666;
+    text-align: right;
+    display: none;
+}
+
+.c-jerk a {
+    color: #666;
+}
+
+.c-replies, .c-ir .c-reply {
+    border-left: 1px solid #8db5d7;
+    margin: 0 0 0 20px;
+}
+
+.c-hide {
+    display: none;
+}
+
+.c-ir .c-replies {
+    border: none;
+}
+
+.c-replies ul {
+    padding-top: 10px;
+    margin: 0;
+}
+
+.c-ir c-replies {
+    margin-left: 20px;
+}
+
+.c-reply {
+    clear: left;
+    padding: 10px;
+    background: #d9e7f3;
+    font-size: 85%;
+}
+
+.c-form {
+    background: #d9e7f3;
+}
+
+.c-form {
+    margin: 0;
+    padding: 5px;
+}
+
+.c-reply a {
+    text-decoration: none;
+    color: #113b63;
+}
+
+.c-reply a span {
+    font-weight: none;
+}
+
+.c-captcha input {
+	float: left;
+	margin: 3px 5px 0 0;
+}
+
+.c-audio-captcha {
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+.c-captcha label {
+	display: block;
+}
+
+.c-captcha {
+	margin: 5px 0;
+}
+
+.comment textarea {
+    width: 95%;
+    height: 5em;
+    font-size: 100%;
+    margin: 0;
+    display: block;
+} /*ie6*/
+
+.c-overflow {
+    clear: left;
+    margin: 30px 0;
+    background: #D6E2EC;
+    text-align: center;
+}
+
+.c-overflow a {
+    background: #fff url(/img/c-comments-add.png) 7px 1px no-repeat;
+    padding: 2px 10px 2px 27px;
+    font-weight: bold;
+}
+
+.c-overflow strong {
+    text-decoration: underline;
+}
+
+.c-overflow img {
+    vertical-align: middle;
+    padding-right: 4px;
+}
+
+.c-base-reply .c-head {
+    background: #E7F3D9;
+    color: #5C793C;
+    margin: 0;
+    padding: 4px 10px 0 5px;
+}
+
+.c-base-reply .c-time {
+	font-size: 85%;
+	color: #5C793C;
+}
+
+.c-base-reply a {
+    color: #5C793C;
+}
+
+.c-base-reply form, .c-bot-reply-notice {
+    background: #E7F3D9;
+    padding: 8px 10px 10px;
+    color: #5C793C;
+}
+
+.c-bot-reply-notice {
+	clear: left;
+}
+
+.c-base-reply .c-captcha {
+	font-size: 85%;
+}
+
+.c-box em {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a.c-edit {
+    background: #fff097 url(/img/c-edit.gif) no-repeat scroll 3px 50%;
+    display: block;
+    font-size: 85%;
+    margin: 0;
+    padding: 3px 3px 3px 22px;
+    text-decoration: none;
+}
+
+a.c-edit:hover {
+    background-color: #f2dd63;
+}
+
+a.c-edit span.c-edit-lnk {
+    font-weight: bold;
+    color: #105CB6;
+    text-decoration: underline;
+}
+
+.c-hide textarea {
+	margin: 5px 0 2px 0;
+}
+
+.c-notice {
+	clear: left;
+	padding-top: 1em;
+}
+
+.c-notice div {
+    background:#EDF7E6;
+    border: 2px double #BDE79F;
+    display: block;
+    font-size: 85%;
+    margin-bottom: 5px;
+    padding: 2px;
+}
+
+.c-notice div a {
+	display: block;
+    background: #D7F0C6 url(/img/c-notice.png) no-repeat scroll 5px 50%;
+    padding: 3px 3px 3px 25px;
+    text-decoration: none;
+    color: #6F8460;
+}
+
+.c-notice a strong {
+	text-decoration: underline;
+}
+
+.c-digg-active, .c-bury-active, .c-block, .c-audio-captcha {
+    cursor: pointer;
+}
+
+.c-block {
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.c-rply-err {
+	font-weight: bold;
+	color: #c00;
+	padding: 2px 0;
+}
+
+.c-bot-calltoaction div {
+	margin: 0 0 2em 0;
+}
+
+.c-bot-calltoaction ul {
+	list-style: disc;
+	margin: 0 0 1em 0;
+}
+
+.c-bot-calltoaction li {
+	margin: 0 0 3px 20px;
+	list-style: disc;
+	padding: 0;
+	color: #5C793C;
+}
+
+.c-time {
+	padding: 3px 0 3px 38px;
+	background: url(/img/c-time.gif) 20px 50% no-repeat;
+	color: #50687d;
+	white-space: nowrap;
+}
+
+.c-reply-head {
+	color: #50687d;
+}
+
+a.c-reply-head strong {
+	text-decoration: underline;
+	color: #105cb6;
+}
+
+.c-thread-form {
+    display: none;
+}
+
+.c-toggle-frm {
+    text-decoration: none;
+}
+
+.c-toggle-frm span {
+    font-weight: none;
+    text-decoration: none;
+    color: #696969;
+}
+
+.c-toggle-frm .c-span-highlight {
+    color: #113b63;
+    text-decoration: underline;
+}

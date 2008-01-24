@@ -1,0 +1,71 @@
+<!--include:header.html-->
+<strong>配置列表</strong> | <a href="?action=doSiteMAP">Sitemap</a> | <a href="?action=doOpml">Opml</a> | <a href="?action=doListnews_vote">投票</a> | <a href="?action=doIcon">生成图标</a> | <a href="?action=doCache">更新缓存</a>
+<hr  />
+<form id="config" name="config" action="" method="post" >
+<input name="module"  value="xna" type="hidden">
+<input name="action"  value="doUpdateConfig" type="hidden">
+<table width="100%" >
+<tr>
+<td colspan="2">类型</td>
+</tr>
+
+<tr>
+<td>皮肤  </td>
+<td><input name="skin" type="text" id="types" value="default" size="18" maxlength="100" /> 
+  请填写真实的目录名</td>
+</tr>
+<tr>
+  <td>核心程序</td>
+  <td>  <select id="rssread" name="rssread">
+  <option label="magpierss" value="magpierss" selected="selected">magpierss</option>
+  <option label="simplepie" value="simplepie">simplepie</option>
+  <option label="lastrss" value="lastrss">lastrss</option>
+  </select></td>
+</tr>
+<tr>
+  <td>生成RSS数量</td>
+  <td><input name="rssnumber" type="text" id="rssnumber" value="50" size="18" maxlength="8" /></td>
+</tr>
+<tr>
+  <td>是否评论</td>
+  <td>  <select id="comments" name="comments">
+  <option label="是" value="true" selected="selected">是</option>
+  <option label="否" value="false">否</option>
+  </select></td>
+</tr>
+<tr>
+  <td>假静态</td>
+  <td>  <select id="rewrite" name="rewrite">
+  <option label="是" value="true" selected="selected">是</option>
+  <option label="否" value="false">否</option>
+  </select></td>
+</tr>
+<tr>
+  <td>分页</td>
+  <td>  <select id="ispages" name="ispages">
+  <option label="AJAX" value="ajax" selected="selected">AJAX</option>
+  <option label="静态" value="html">静态</option>
+  <option label="其它" value="other">其它</option>
+  </select></td>
+</tr>
+<tr>
+  <td>语言</td>
+  <td>
+  <select id="language" name="language">
+  <option label="简体中文" value="zh-cn" selected="selected">简体中文</option>
+  <option label="繁體中文" value="zh-tw">繁體中文</option>
+  <option label="English" value="en">English</option>
+  </select>
+</td>
+</tr>
+<tr>
+  <td></td>
+  <td><input name="submit" type="submit" value=" 提交 " />
+    &nbsp;&nbsp;
+    <input name="reset" type="reset" value=" 重置 " />
+    &nbsp;&nbsp; </td>
+</tr>
+</table>
+</form>
+<hr  />
+<!--include:footer.html-->

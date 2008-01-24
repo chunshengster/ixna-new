@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD WML 2.0//EN" "http://www.wapforum.org/dtd/wml20.dtd">
+<wml>
+<card id="iXNA" title="IXNA WAP">
+<p>
+<!--for:$ret $key $list-->
+<!--if:$id==''-->
+<p>$list[ctime] $list[site_name]<br/>
+- <a target="_blank" href="./wap.php?id=$list[id]">$list[news_title]</a><!--else-->
+<p>$list[ctime] $list[site_name]<br/>
+- <a target="_blank" href="$list[news_url]">$list[news_title]</a><br />
+$list[news_content]<br/><!--/if--></p>
+<!--/for-->
+<br />
+<!--if:$id==''-->$pagenav<!--/if-->
+Power by <a href="http://www.ixna.net">Ixna</a></p>
+<do type="prev" label="Back"><prev/></do>
+</card></wml>

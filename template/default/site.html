@@ -1,0 +1,31 @@
+<!--include:header.html-->
+<div>
+<table width="100%">
+<tr>
+<td>站点名称</td>
+<td>所属分类</td>
+<td>更新时间</td>
+<td>站点说明</td>
+<td>站点RSS</td>
+</tr>
+<!--for:$ret $key $site-->
+<tr>
+<td><a href="<!--if:$rewrite=="true"-->./site/$site[sid]<!--else-->./?site=$site[sid]<!--/if-->" ><img src="./cache/ico/$site[sid]_favicon.ico" style="height:16px" class="img" alt="articles" /></a> <a href="$site[site_url]" rel="external">$site[site_title]</a></td>
+<td>$site[rss_cate]</td>
+<td>$site[ctime]</td>
+<td>$site[content]</td>
+<td><a class="similar" href="$site[rss_url]" rel="external"><img src="./images/icon/feed.png" class="img" alt="rss" /></a> [$site[sum]]</td>
+</tr>
+<!--/for-->
+</table>
+</div>
+<div id="ContentFoot">
+<div class="rDiv">
+<div class="lDiv martop"><a href="wap.php" class="navBlack" rel="external">Wap</a></div>
+<div class="lDiv"><a href="http://www.ixna.net/"><img src="./images/logo.gif" alt="Ixna" class="img" height="15" width="80" /></a></div>
+<div class="cls"></div>
+</div>
+<div class="cls"></div>
+</div>
+</div>
+<!--include:footer.html-->

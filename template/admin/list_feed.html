@@ -1,0 +1,35 @@
+<!--include:header.html-->
+<strong>Feed列表</strong>  |  <a href="?action=doListFeedAudit">审核新闻</a>
+<hr  />
+<script language="javascript" type="text/javascript" src="../images/admin/common.js"></script>
+<form action="" method="post" name="frmAdd">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>编号</td>
+<td>标题</td>
+<td>所属分类</td>
+<td>站点RSS</td>
+<td>作者</td>
+<td>发布时间</td>
+<td>操作</td>
+</tr>
+<!--for:$ret $key $news-->
+<tr>
+<td><input type="checkbox" name="chkLink" value="$news[id]" />$news[id]</td>
+<td><a href="../articles.php?id=$news[id]" target="_blank">$news[news_title]</a></td>
+<td>$news[site_types]</td>
+<td><a href="$news[news_url]" target="_blank"><img src="../images/admin/feed.png" class="img" alt="RSS地址" /></a></td>
+<td><a href="../?site=$news[site_id]" target="_blank">$news[site_name]</a></td>
+<td>$news[news_ctime]</td>
+<td><a href="###"><img class="img"  src="../images/admin/<!--if:$news[news_state]=="1"-->peak.png<!--else-->feed_lock.png<!--/if-->" onClick="setstate($news[id])" alt="点我" class="img" /></a>
+<a href="?action=doEditFeed&amp;id=$news[id]"><img src="../images/admin/feed_add.png" class="img" alt="$lang[_LANG_0407]"/></a>  <a href="?action=doDeleteFeed&amp;id=$news[id]" onclick="return confirm('确认删除此内容?');"><img src="../images/admin/feed_delete.png" class="img" alt="$lang[_LANG_0401]" /></a></td>
+</tr>
+<!--/for-->
+</table>
+</form>
+      <div class="divFoot">
+           <input type="checkbox" name="chkUnSelect" onClick="javascript:selectAll('frmAdd');" id="chkSelectAll"><label for="chkSelectAll">全选</label>
+       </div>
+$total $pagenav
+<hr />
+<!--include:footer.html-->

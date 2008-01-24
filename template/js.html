@@ -1,0 +1,27 @@
+/* SXNA TopN News
+ * $id SXNA.topn.js v.1.0 {%$smarty.now%} Spvrk Exp $
+ */
+var TopN={};
+
+TopN.caption='SXNA TopN News';
+_newsArray=[];
+
+{%foreach item=news from=$list%}
+_newsArray[_newsArray.length]={title:/{%$news.news_title%}/.source,link:"{%$news.news_url%}"};
+{%/foreach%}
+
+TopN.newsArray=_newsArray;
+
+ 
+TopN.getNewsXhtml=function(maxRowInt,maxRowSizeInt){
+	if(maxRowInt==null)maxRowInt=9;
+	if(maxRowInt==null)maxRowSizeInt=15;
+	var _output=[];
+	for(var i=0;i<Math.min(TopN.newsArray.length,maxRowInt);i++){
+		var _news=TopN.newsArray[i];
+		var _title=_news.title.length>maxRowSizeInt?_news.title.substr(0,maxRowSizeInt)+'...':_news.title;
+		_output[_output.length]='\t<li><a href="'+_news.link+'" target="_blank">'+_title+'</a></li>';
+	}
+	return '<ul class="SXNA_TopN">\r\n'+_output.join('\r\n')+'\r\n</ul>';
+}
+ 

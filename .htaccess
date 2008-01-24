@@ -1,0 +1,30 @@
+# BEGIN iXNA
+<IfModule mod_rewrite.c>
+RewriteEngine On
+ RewriteBase /
+RewriteRule ^index.html$		index.php [NC,QSA,L]
+RewriteRule ^default.html$		index.php [NC,QSA,L]
+RewriteRule ^atom/([0-9,a-z]*)$		atom.php\?type=$1 [NC,QSA,L]
+RewriteRule ^rss/([0-9,a-z]*)$		rss.php\?type=$1 [NC,QSA,L]
+RewriteRule ^tags/$		tags.php [NC,QSA,L]
+RewriteRule	^tags/(.+)$		tags.php?tags=$1 [NC,QSA,L]
+RewriteRule ^articles/([0-9]+)$		articles.php\?id=$1 [NC,QSA,L]
+RewriteRule ^site/([0-9]+)$		index.php\?site=$1 [NC,QSA,L]
+RewriteRule ^days/([0-9]+)days$		index.php\?days=$1 [NC,QSA,L]
+RewriteRule ^all/page([0-9]+)$		index.php\?pageID=$1 [NC,QSA,L]
+RewriteRule ^(.*)/page([0-9]+)$		index.php\?cate=$1&pageID=$2 [NC,QSA,L]
+RewriteRule ^([0-9,a-z]*)$ 		index.php\?cate=$1 [NC,QSA,L]
+RewriteRule ^feed_(.*)$		feed/index.php\?name=$1 [NC,QSA,L]
+
+RewriteRule ^([0-9,a-z]*)_atom.xml$		atom.php\?type=$1 [NC,QSA,L]
+RewriteRule ^([0-9,a-z]*)_rss.xml$		rss.php\?type=$1 [NC,QSA,L]
+RewriteRule ^site.html$		site.php [NC,QSA,L]
+RewriteRule ^submit.html$		submit.php [NC,QSA,L]
+RewriteRule ^([0-9]+)\.html$		index.php\?pageID=$1 [NC,QSA,L]
+RewriteRule ^site_([0-9]+)\.html$		index.php\?site=$1 [NC,QSA,L]
+RewriteRule ^articles_([0-9]+)\.html$		articles.php\?id=$1 [NC,QSA,L]
+RewriteRule ^([0-9]+)\.html$		index.php\?pageID=$1 [NC,QSA,L]
+RewriteRule ^(.*)_([0-9]+)\.html$		index.php\?cate=$1&pageID=$2 [NC,QSA,L]
+
+
+# END iXNA

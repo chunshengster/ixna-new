@@ -1,0 +1,287 @@
+/***** "Blogged By" List  *****/
+
+#blogged h3 {
+	padding-top: 1em;
+}
+
+#blogged ul {
+	margin: 1em 0;
+	padding: 0;
+}
+
+#blogged li {
+	margin: 0;
+	padding: 0.5em 0 0 0;
+	list-style: none;
+	clear: left;
+	overflow: hidden;
+	width: 100%; /* need width for IE */
+	font-size: 105%;
+}
+
+#blogged a {
+	padding-bottom: 0.1em;
+}
+
+#blogged li img {
+	margin: 0 0.5em 0.5em 0;
+	border: 1px solid #ccc;
+	vertical-align: middle;
+	position: relative;
+	top: 2px;
+}
+
+/* sqaure permalink ad */
+
+.single_ad_unit img {
+	padding: 3px;
+	border: 1px solid #2E6AB1;
+}
+
+.single_ad_unit a:hover img {
+	border-color: #003;
+}
+
+.single_ad_unit {
+	float: right;
+	margin: 10px 20px 0 0;
+	color: #999;
+	width: 173px; /* need for FX1.5 */
+	height: 133px;
+	position: absolute;
+}
+
+.single_ad_unit a.ad_block {
+	display: block;
+	border: 1px solid #ddd;
+	padding: 5px 7px;
+	width: 160px;
+	height: 120px;
+	overflow: hidden;
+	text-decoration: none;
+	color: #333;
+	background: #f9f9f9;
+	line-height: 1.35;
+}
+
+.single_ad_unit a.ad_block:hover {
+	border-color: #999;
+}
+
+.single_ad_unit strong {
+	text-decoration: underline;
+	color: #105CB6;
+	display: block;
+	line-height: 1.2;
+	padding-bottom: 4px;
+}
+
+.single_ad_unit em {
+	font-style: normal;
+	text-decoration: underline;
+	display: block;
+	color: #105CB6;
+	padding: 2px 0 0 0;
+	font-size: 85%;
+}
+
+.single_ad_unit .ad-lines {
+	display: block;
+	padding: 0;
+	font-size: 85%;
+}
+
+.single_ad_unit .ad_origin  {
+	display: block;
+	text-align: right;
+	color: #999 !important;
+	text-decoration: none;
+	font-size: 70%;
+	text-decoration: underline;
+}
+
+.single_ad_unit a:hover strong {
+	color: #003;
+}
+
+.single_ad_unit a:hover em {
+	color: #003;
+	text-decoration: underline;
+}
+
+.item_ad_image {
+	float: right;
+	margin: 6px 0 10px 30px;
+	width: 298px;
+    height: 248px;
+}
+
+.rectangle_ad_unit .ad_special a.ad_block {
+    padding: 20px;
+    width: 248px;
+    height: 198px; /*IE6*/
+}
+
+.rectangle_ad_unit .ad_special strong {
+    font-size: 190%;
+}
+
+.rectangle_ad_unit .ad_special span {
+    font-size: 130%;
+    color: #666;
+}
+
+.rectangle_ad_unit .ad_special em {
+    font-size: 130%;
+    padding-top: 0.5em;
+}
+
+.item_ad_image .rectangle_ad_unit {
+    float: none;
+}
+
+.rectangle_ad_unit {
+    float: right;
+}
+
+
+
+/***** "Dugg By" List *****/
+
+#commentform {
+	clear: both;
+	margin: 0 0 2em 0;
+}
+
+ul.user-list {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 10px;
+    margin-bottom: 3em;
+    margin-top: 0;
+    float: left;
+    width: 95%;
+}
+
+ul.user-list li {
+	width: 170px;
+	float: left;
+	padding-bottom: 0.1em;
+}
+
+ul.user-list li img {
+	border: 1px solid #ccc;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+#comments, #diggers {
+	clear: left;
+}
+
+#diggers h3 {
+    font-size: 135%;
+}
+
+#diggers {
+	padding: 1.5em 0 0 0;
+}
+
+#diggers .extra-nav {
+	width: 95%;
+  margin-bottom: 1em;
+}
+
+#diggers .extra-nav li {
+	letter-spacing: 0;
+}
+
+#diggers .extra-nav li a, #diggers .extra-nav li span {
+    font-size: 100%;
+}
+
+#diggers .extra-nav li:hover a, #diggers .extra-nav li:hover span {
+	background-position: 0 -200px;
+}
+
+
+#diggers .extra-nav li.active:hover a, #diggers .extra-nav li.active:hover span {
+	background-position: 0 -300px;
+}
+
+#diggers .pages {
+        margin-top: 0;
+        height: 1em;
+        border: none;
+        background: url(/img/underline.png) 0 20px repeat-x;
+} /*IE6*/
+
+#diggers .nextprev {
+        float: right;
+        margin-left: 10px;
+}
+
+/***** Email Form + Invite Form *****/
+
+#email1, #email2, #email3, #email4, #email5, #email6 {
+	margin: 0 5px 5px 0;
+	width: 340px;
+	float: left;
+}
+
+/***** Permalink Details ******/
+
+.news-full, .news-full-confirm {
+	margin-top: 7px;
+	padding-bottom: 10px;
+    padding-top: 1px; /* need 1px top IE6 */
+	margin-right: 360px;
+}
+
+.v {
+    margin-right: 320px;
+}
+
+.news-full-confirm .news-body {
+	padding-left: 0;
+}
+
+.news-full .news-digg {
+	top: 0;
+	left: 0;
+}
+
+.news-full h3 {
+    font-size: 145%;
+}
+
+.news-full .news-body p {
+	margin: 0.4em 0 1em 0;
+    line-height: 1.6;
+}
+
+.news-full .news-details {
+    padding: 1em 0 1.5em 0;
+    margin: 0;
+    font-size: 85%;
+}
+
+.news-full .news-details dl {
+    margin: 0 0 2em 0;
+    float: left;
+} /*IE6*/
+
+.news-full .news-details dt {
+    float: left;
+    font-weight: bold;
+}
+
+.news-full .news-details dd {
+    margin-left: 7em;
+    margin-bottom: 1em;
+}
+
+.news-full .probdrop {
+    background: transparent;
+    margin-left: -5px;
+}

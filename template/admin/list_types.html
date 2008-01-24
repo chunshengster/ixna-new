@@ -1,0 +1,30 @@
+<!--include:header.html-->
+<strong>站点列表</strong> <a href="?action=doAddTypes">添加类别</a>
+<hr  />
+<script language="javascript" type="text/javascript" src="../images/admin/common.js"></script>
+<form action="" method="post" name="frmAdd">
+<table width="100%" >
+<tr>
+<td>编号</td>
+<td>类别类型</td>
+<td>类别名称</td>
+<td>类别分类</td>
+<td>操作</td>
+</tr>
+<!--for:$ret $key $type-->
+<tr>
+<td><input type="checkbox" name="chkLink" value="$type[cid]" />$type[cid]</td>
+<td>$type[cate_title]</td>
+<td>$type[cate_content]</td>
+<td>$type[cate_sort]</td>
+<td><a href="?action=doEditTypes&amp;id=$type[cid]">编辑</a>  <a href="?action=doDeleteTypes&amp;id=$type[cid]"  onclick="return confirm('确认删除类别和以下类别新闻?');">删除</a></td>
+</tr>
+<!--/for-->
+</table>
+</form>
+      <div class="divFoot">
+           <input type="checkbox" name="chkUnSelect" onClick="javascript:selectAll('frmAdd');" id="chkSelectAll"><label for="chkSelectAll">全选</label>
+       </div>
+$total $pagenav
+<hr  />
+<!--include:footer.html-->

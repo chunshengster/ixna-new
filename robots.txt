@@ -1,0 +1,7 @@
+﻿User-agent: *
+
+Disallow: /cache/
+Disallow: /ajax/
+Disallow: /inc/
+Disallow: /admin/
+Disallow: /template/

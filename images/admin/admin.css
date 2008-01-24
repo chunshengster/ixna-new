@@ -1,0 +1,127 @@
+﻿/*页面body*/
+html,BODY {
+FONT-SIZE: 14px; 
+FONT-FAMILY: Tahoma,sans-serif; 
+margin:0px auto 0px auto;
+margin-top: 5px;
+background: #dae6f3;
+}
+/*公用*/
+ div,td,select,textarea,h1,h2,h3,h4,h5,h6,head,th {
+	font-family: Tahoma,sans-serif;
+	font-size: 14px;
+ }
+ object,.DocumentBodyImage {
+	border: solid 1px #999999;
+ }
+ input,textarea,select,td{
+	font:normal 12px Verdana;color:#333333;border:1px solid #999999;background:#ffffff
+ }
+ table{
+	border-collapse:collapse;width:100%
+}
+ td{
+	padding:3px;300px
+}
+ th{
+	height:25px
+ }
+ hr{
+	height:1px;width:100%
+ }
+ input{
+	height:20px;
+ }
+ textarea{
+	width:80%;height:50px;overflow:auto;
+ }
+ form{
+	display:inline
+ }
+ img {
+	border:0
+ }
+ p {
+	padding: 0px;
+	margin: 0px;
+ }
+ a {
+	text-decoration: none;	
+	color: #333333;
+ }
+ a:hover {
+	text-decoration: underline;
+ }
+ .divFoot {
+	height: 30px;
+	padding: 0px;
+	margin: 0px;
+	vertical-align: middle;
+	line-height: 30px;
+	text-align: right;
+}
+
+.topmenu {
+	height: 28px;
+	float: right;
+	min-width: 600px;
+	width: auto;
+	font-size: 14px;
+	font-weight: bold;
+	color: #555555;
+	margin-top: 0px;
+}
+.topmenu ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.topmenu li {
+	float: left;
+	border: solid 1px #43809C;
+	border-bottom: none;
+	list-style-type: none;
+	margin-right: 1px;
+	margin-top: 2px;
+}
+
+.topmenu span {
+	display: block;
+	float: left;
+	padding: 0 10px;
+	background: url(bg_menu2.gif);
+	height: 25px;
+	line-height: 25px;
+	border: solid 1px #FFFFFF;
+	border-bottom: none;
+	color: #555555;
+}
+.guide td {
+	border: 1px solid #1598CB;
+	background-color: #FBFFE1;
+	line-height: 1.2em;
+	height: 28px;
+	text-indent: 20px;
+	color: #FF6600;
+}
+
+/*消息提示样式定制开始*/
+.Msg_Error {
+	padding: 0px;
+	padding-left: 20px;
+	margin-left: 3px;
+	font: bold 12px Tahoma;
+	color: #666;
+	border: 1px solid #FF6600;
+	background: #FFF2E9 url(msg_error.gif) no-repeat 2px center;
+}
+#info {
+	padding: 3px;
+	padding-left: 20px;
+	margin-left: 5px;
+	font: bold 12px Tahoma;
+	color:red;
+	line-height: 22px;
+	border: 1px solid #FF6600;
+}
+/*消息提示样式定制结束*/

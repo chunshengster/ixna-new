@@ -1,0 +1,41 @@
+<div id="m_Body">
+<div class="pages"><span class="nextprev">$total</span>
+<!--if:$ispages==ajax-->$pageajax<!--elseif:$ispages==html-->$pagehtml<!--else-->$pagenav<!--/if-->
+</div>
+<div class="main">
+<!--for:$ret $key $list-->
+<div class="news-summary" id="enclosure$list[id]">
+<div class="news-body">
+<h3 id="title$list[id]"><a href="$articles_links$list[id]">
+$list[news_title]</a></h3>
+<p class="news-submitted">
+<a href="$site_links$list[site_id]"><!--if:$list[news_state]=="1"--><img src="./images/default/peak.png" style="height:16px" class="img" alt="peak" /><!--else--><img src="./cache/ico/$list[site_id]_favicon.ico" style="height:16px" class="img" alt="articles" /><!--/if--></a>
+<a href="$list[news_url]" onclick="javascript:link($list[id]);" class="simple" rel="external"><span class="d">[ $list[site_name] ]</span></a> Time:$list[ctime] Hits:$list[news_hits]</p>
+<p>$list[content]</p>
+	<div id="tag_message_$list[id]">Tags:<?php echo($sHTML_Tags);?> <a style="cursor:pointer" onclick="javascript:showtags('Tags_$list[id]');" id="addTags_$list[id]">[+]</a> add</div>
+	<div id="Tags_$list[id]" style="display:none;">
+	<form name="frmEditTag" id="frmEditTag"><p>
+        <input type="text" id="txtTag" />
+   	    <input type="button" name="btnAction" onclick="javascript:submitTag('$list[id]');" value="go" />
+    </p></form>
+    </div>
+<div class="news-details">
+<a href="$articles_links$list[id]" class="tool comments ">$list[news_count] comments</a> 
+<ul class="probdrop">
+<li><a href="#" onclick="" class="toplinep">Bury</a></li>
+</ul>
+</div>
+</div>
+<ul class="news-digg">
+  <li class="digg-count" id="main$list[id]">
+   <h2 id="diggs-strong-$list[id]">$list[news_vote]</h2>
+   <span id="e$list[id]"><a href="javascript:void(0);" onclick="javascript:NewsVote($list[id]);" id="diggs$list[id]">digg it</a></span>
+  </li>
+ </ul>
+</div>
+<!--/for-->
+</div>
+<div class="pages"><span class="nextprev">$total</span>
+<!--if:$ispages==ajax-->$pageajax<!--elseif:$ispages==html-->$pagehtml<!--else-->$pagenav<!--/if-->
+</div>
+</div>

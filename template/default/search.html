@@ -1,0 +1,19 @@
+<!--include:header.html-->
+<div class="title">文章搜索结果</div>
+<div class="body">
+<!--for:$ret $key $list-->
+<div class="ArticleTitle">
+<span class="FloatLeft">
+<a href="$articles_links$list[id]"><img src="./cache/ico/$list[site_id]_favicon.ico" style="height:16px" class="img" alt="articles" /></a> <a href="$list[news_url]" rel="external">$list[news_title]</a></span>
+<span class="FloatRight"><a  href="$list[news_url]" rel="external">$list[site_name]</a> <a href="$site_links$list[site_id]"><img src="./images/default/site.png" class="img" alt="site" /></a></span>
+</div>
+<!--/for-->
+</div>
+<div id="ContentFoot">
+<div class="rDiv">
+<div class="cls"></div>
+</div>
+<div class="cls"></div>
+</div>
+</div>
+<!--include:footer.html-->

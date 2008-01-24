@@ -1,0 +1,56 @@
+﻿/*  
+Theme Name: On My Way
+Theme URI: http://realazy.org/blog/
+content: the Yahoo!'s way
+Version: 1.0
+Author: Realazy
+Author URI: http://realazy.org
+*/
+
+* {margin:0; padding:0;}
+html {background:#fff; color:#333; font:1em/1.7 "Microsoft JhengHei","微軟正黑體","Microsoft YaHei","微软雅黑",arial,helvetica,sans-serif;}
+input, textarea {padding:1px 2px; font-family:"Microsoft JhengHei","微軟正黑體","Microsoft Yahei","微软雅黑",arial,helvetica,sans-serif;}
+input {line-height:1; vertical-align:middle;}
+a:link, a:visited {color:#007b99; text-decoration:underline;}
+a:hover, a:active{color: #7b0099;}	
+img {border:none;}
+#header {width:100%; padding:4px 0; background:#7b0099 url(img/headerbg.gif) 0 100% repeat-x;color:#fff; text-align:right;}
+#header a:link, #header a:visited, #footer a:link, #footer a:visited {color:#fff; }
+#header a:hover, #header a:active, #footer a:hover, #footer a:active {color:#999; text-decoration:underline;}
+#header a {margin:0 12px; font-weight:bold;}
+#header span {float:left;}
+#header a.skipto {text-decoration:none;}
+#logo {margin:24px; font-family:"Trebuchet MS",arial,helvetica,sans-serif; font-size:6em;}
+#logo a:link, #logo a:visited, .continue a:link, .continue a:visited {color: #7b0099; text-decoration: none;}
+#logo a:hover, #logo a:active, .continue a:hover, .continue a:active {color:#000;}
+#logo, .slogan {text-align:center; line-height:1;}
+#content {padding-top:2em;}
+.slogan {margin:-1em 0 48px 0; color:#7b0099; font-size:0.9em;}
+.post {position:relative; z-index:1; width:39em; padding-left:4em; margin:48px auto;}
+.postat {position:absolute; top:1.85em; left:0; width:3.5em; border:2px solid #ccc; border-top-width:1px; border-left-width:1px; text-align:center;}
+.ym, .d {display:block;}
+.ym {padding:2px 0; background:#7b0099; color:#fff; font-size:.8em;white-space:nowrap; overflow:hidden;}
+.d {padding:.2em 0; font-size:2.5em; color:#000;}
+.posttitle a:link, .posttitle a:visited {text-decoration:none;color:#000;}
+h2.posttitle {font-size:1.8em; white-space:nowrap;}
+.posttitle a:hover, .posttitle a:active {color:#7b0099; text-decoration:underline;}
+.posttitle span {vertical-align:super; color:#999;margin-left:12px;*margin:0;}
+.postmeta {*margin-top:1.6em; color:#999; font-size:.8em; line-height:1;}
+*+html postmeta {margin-top:1.6em;}
+.postmeta a:link, .single .postmeta a:visited {color:#999;text-decoration:none;}
+.postmeta a:hover, .single .postmeta a:active {color:#7b0099;}
+.postentry {margin:1.5em 0;}
+.postentry img {max-width:100%;}
+.postentry ul, .postentry ol {margin:1em 0 1em 4em;}
+.postentry dd {margin-left:2em;}
+.postentry dd {margin-bottom:.4em;}
+.postentry table {border-collapse:collapse;}
+.postentry td, .postentry th {padding:2px 4px; border:1px solid #ccc;}
+.postentry h2 {margin-top:1.8em;}
+.postentry p {margin:1em 0; text-indent:2em;}
+.postentry .quote {margin: 1em 2em; padding: 0 1em; border:1px solid #ccc;}
+.postentry .code {overflow:auto; margin: 1em 2em; padding:.4em .8em; border:1px solid #7b0099; border-left:4px solid #7b0099; background: #333; color: #3c0; font:1em/1.2 Consolas, "Andale Mono", "BitStream Vera Sans Mono", "Courier New", Courier, monospace; }
+.postentry .quote p {text-indent:0;}
+.continue {text-align:right; font-weight:bold;}
+#footer {padding:12px 0; background:#7b0099 url(img/footerbg.gif) 0 0 repeat-x; text-align:center; font-size:.8em; color:#fff; font-weight:bold;}
+#footer img {vertical-align:middle;}

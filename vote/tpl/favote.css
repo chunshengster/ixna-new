@@ -1,0 +1,52 @@
+td {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #333333;
+}
+a:link {
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+	color: #0392AB;
+
+
+}
+a:visited {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #0392AB;
+	text-decoration: none;
+
+}
+a:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #04BEDF;
+}
+.en {
+	font-family: "Verdana", "Arial", "Helvetica", "sans-serif";
+	font-size: 10px;
+	color: #6C1500;
+}
+.bborder {
+	border-bottom:1px solid #E0F2FF;
+}
+body {
+	text-align:center;
+	background-color: #FFFFFF;
+
+
+}
+input {
+	font-family: "宋体";
+	font-size: 12px;
+	background-color: #F7FEFF;
+	border: 1px inset #CCCCCC;
+	color: #333333;
+}
+.tl {
+	font-family: "宋体";
+	font-size: 14px;
+	color: #FF6600;
+	font-weight: bold;
+}
