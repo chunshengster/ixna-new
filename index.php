@@ -81,6 +81,19 @@ while ($row = $rt->fetchRow()){
     $row[title] = $row["news_title"];
     $row[content] = msubstr(strip_tags($row["news_content"]),0,200)."...";
     $row[ctime] = date("Y-m-d H:m:s",$row["news_ctime"]);
+    $row['tags'] = array();
+    if(is_numeric($row['id'])){
+    	$sql_select_tag = "select tag_title from {$tablepre}xna_tags where news_id = $row[id]";
+    	//echo $sql_select_tag."<br>";
+    	$tags_tmp = array();
+    	$tags_tmp = $PlusDB->GetArray($sql_select_tag);
+    	//print_r($tags_tmp);
+    	foreach ($tags_tmp as $tag_tmp){
+    		array_push($row['tags'],$tag_tmp['tag_title']) ;
+    	}
+    }
+    //print_r($row['tags']);
+    //echo "$row[id]:$row[tags][0] <br>";
     $n++;
     $row["n"] = $n;
     $ret[] = $row;

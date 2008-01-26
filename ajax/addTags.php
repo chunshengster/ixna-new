@@ -9,7 +9,7 @@ if(!empty($iID) && !empty($sTag)){
 	$sql="INSERT INTO  {$tablepre}xna_tags (tag_title,news_id) VALUES('$sTag','$iID')";
 	$rt = $PlusDB->execute($sql);
 	if($rt == 1){
-		echo $sTag;
+		echo "<a herf=\"./tagsearch.php?key=$sTag\">$sTag</a>";
 	}else{
 		echo $rt;
 	}
