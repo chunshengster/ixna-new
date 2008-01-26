@@ -117,13 +117,15 @@ function link(id) {
 //show_tags
 function showtags(a_sID){
       var oa = document.getElementById(a_sID);
-      var ob = document.getElementById("add" + a_sID);
+      var ob = document.getElementById("add"+a_sID);
+	  var oc = document.getElementById("txt"+a_sID);
       if(oa.style.display == "block"){
               oa.style.display = "none";
               ob.innerHTML = "[+]";
       }else{
               oa.style.display = "block";
               ob.innerHTML = "[-]";
+			  oc.value = '';
       }
       return false;
 }
@@ -132,12 +134,16 @@ function showtags(a_sID){
 function submitTag(a_sID){
     //update TAG
 	//alert("ID:"+a_sID);
-	txtTag=document.getElementById("txtTag"+a_sID).value;
+	txtTag=document.getElementById("txtTags_"+a_sID).value;
     //alert(txtTag);
 	ajax.post(
 		"./ajax/addtags.php?id="+a_sID,
 		"txtTag="+txtTag,
-		function(obj) { document.getElementById("tag_message_"+a_sID).innerHTML+=" "+obj.responseText;  }
+		function(obj) { document.getElementById("tag_message_"+a_sID).innerHTML+=" "+obj.responseText;
+						//alert (a_sID);
+						document.getElementById("Tags_"+a_sID).style.display="none";
+						document.getElementById("addTags_"+a_sID).innerHTML = "[+]"; 
+					}
 	);
 }
 
