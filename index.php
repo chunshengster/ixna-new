@@ -74,7 +74,7 @@ $start = ($start>$num)?0:$start;
 
 $page = 20;
 include _ROOT."/inc/page.php";
-$sql = "select *,n.news_ctime as ctime,n.id as id  from {$tablepre}xna_news n left join {$tablepre}xna_site x on (x.sid=n.site_id) where site_audit=0 and n.news_state<2 $arg order by $hots n.news_state desc,n.news_ctime desc ";
+$sql = "select *,n.news_ctime as ctime,n.id as id from {$tablepre}xna_news n left join {$tablepre}xna_site x on (x.sid=n.site_id) where site_audit=0 and n.news_state<2 $arg order by $hots n.news_state desc,n.news_ctime desc ";
 $rt = $PlusDB->SelectLimit($sql, $page, $start);
 //echo $sql;
 while ($row = $rt->fetchRow()){
@@ -119,7 +119,7 @@ if (!empty($cate)){
     $type = "";
 }
 //end
-echo rewrite() ;
+//echo rewrite() ;
 define("_TPLPath_", _ROOT . "/template/$skin/");
 define("_TPLCachePath_", _ROOT . '/cache/');
 define("_TPLCacheLimit_", 1800);
